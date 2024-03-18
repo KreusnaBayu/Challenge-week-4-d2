@@ -14,20 +14,20 @@ void main() {
       stdout.write('Masukkan suhu dalam Fahrenheit: ');
       num suhuFahrenheit = num.parse(stdin.readLineSync()!);
       num suhuCelciusFromFahrenheit = fahrenheitToCelcius(suhuFahrenheit);
-      print('$suhuFahrenheit derajat Fahrenheit = $suhuCelciusFromFahrenheit derajat Celcius');
+      print('$suhuFahrenheit derajat Fahrenheit = ${suhuCelciusFromFahrenheit.toStringAsFixed(2)} derajat Celcius');
       break;
     case '2':
       stdout.write('Masukkan suhu dalam Kelvin: ');
       num suhuKelvin = num.parse(stdin.readLineSync()!);
       num suhuCelciusFromKelvin = kelvinToCelcius(suhuKelvin);
-      print('$suhuKelvin Kelvin = $suhuCelciusFromKelvin derajat Celcius');
+      print('$suhuKelvin Kelvin = ${suhuCelciusFromKelvin.toStringAsFixed(2)} derajat Celcius');
       break;
     case '3':
       
       stdout.write('Masukkan suhu dalam Reamur: ');
       num suhuReamur = num.parse(stdin.readLineSync()!);
       num suhuCelciusFromReamur = reamurToCelcius(suhuReamur);
-      print('$suhuReamur derajat Reamur = $suhuCelciusFromReamur derajat Celcius');
+      print('$suhuReamur derajat Reamur = ${suhuCelciusFromReamur.toStringAsFixed(2)} derajat Celcius');
       break;
     default:
       print('Pilihan tidak valid!');
